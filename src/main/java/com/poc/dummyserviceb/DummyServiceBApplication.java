@@ -22,4 +22,28 @@ public class DummyServiceBApplication {
         return "Bonjour!";
     }
 
+    @GetMapping("/hello2")
+    public String hello2(@RequestParam(defaultValue = "0", required = false) Integer delay) throws InterruptedException{
+        TimeUnit.MILLISECONDS.sleep(delay);
+        return "Bonjour2!";
+    }
+
+    @GetMapping("/hello3")
+    public String hello3(@RequestParam(defaultValue = "0", required = false) Integer delay) throws InterruptedException{
+        TimeUnit.MILLISECONDS.sleep(delay);
+        return "Bonjour3!";
+    }
+
+    @GetMapping("/hello4")
+    public String hello4(@RequestParam(defaultValue = "0", required = false) Integer delay) throws InterruptedException{
+        TimeUnit.MILLISECONDS.sleep(delay);
+        return "Bonjour4!";
+    }
+
+    @GetMapping("/hello5")
+    public String hello5(@RequestParam(defaultValue = "0", required = false) Integer delay) throws InterruptedException{
+        TimeUnit.MILLISECONDS.sleep(delay);
+        return "Bonjour5!";
+    }
+
 }
